@@ -1,16 +1,6 @@
 <html>
 <body>
-{{#username}}
-Welcome, {{username}}!<br><br>
-{{/username}}
-
-{{^username}}
-<form action="login" method="post">
-    <input type="text" placeholder="Username" name="username" size="25"/>
-    <input tyep="password" placeholder="Password" name="password" size="25"/><br><br>
-    <button type="submit">Login / Create Account</button>
-</form>
-{{/username}}
+{{> header}}
 
 {{#threads}}
 <a href="replies?id={{id}}">{{text}}</a> by {{username}}<br>

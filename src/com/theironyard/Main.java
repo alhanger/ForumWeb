@@ -58,7 +58,6 @@ public class Main {
                     } catch (Exception e) {
 
                     }
-
                     return new ModelAndView(m, "replies.html");
                 }),
                 new MustacheTemplateEngine()
